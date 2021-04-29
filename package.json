@@ -1,0 +1,27 @@
+{
+  "name": "mc-command-patch",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chienmy/mc-command-patch.git"
+  },
+  "keywords": ["minecraft"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chienmy/mc-command-patch/issues"
+  },
+  "homepage": "https://github.com/chienmy/mc-command-patch#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/pngjs": "^6.0.0",
+    "pngjs": "^6.0.0"
+  }
+}

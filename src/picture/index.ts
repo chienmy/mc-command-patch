@@ -1,0 +1,1 @@
+export { mapColorConvert } from './mapColor';
