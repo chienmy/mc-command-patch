@@ -1,10 +1,10 @@
 {
   "name": "mc-command-patch",
-  "version": "0.1.1",
-  "description": "",
-  "main": "index.ts",
+  "version": "0.1.2",
+  "description": "This package provides extra commands in minecraft.",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   "keywords": [
     "minecraft"
   ],
-  "author": "",
+  "author": "chienmy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chienmy/mc-command-patch/issues"
