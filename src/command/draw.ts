@@ -1,12 +1,12 @@
 import axios from "axios";
-import {PNG} from "pngjs";
-import {mapColorConvert} from "../picture";
+import { PNG } from "pngjs";
+import { mapColorConvert } from "../picture";
 
 export const drawPicture = (command: string): Promise<string[]> => {
   const [, x, y, z, target, url] = command.split(" ");
   return new Promise<string[]>((resolve) => {
     if (["north", "south", "east", "west"].indexOf(target) < 0) {
-      return [];
+      resolve([]);
     }
     axios.get(url, {responseType: 'arraybuffer'})
       .then((res) => {

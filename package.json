@@ -1,6 +1,6 @@
 {
   "name": "mc-command-patch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.ts",
   "scripts": {
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/chienmy/mc-command-patch.git"
   },
-  "keywords": ["minecraft"],
+  "keywords": [
+    "minecraft"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "@types/pngjs": "^6.0.0",
+    "axios": "^0.21.1",
     "pngjs": "^6.0.0"
   }
 }
