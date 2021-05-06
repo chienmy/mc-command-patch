@@ -1,5 +1,5 @@
 // 后续考虑对命令参数进行验证
-import {clean, drawCircle, drawPicture} from "./command";
+import {clean, drawCircle, drawPicture, musicCommand} from "./command";
 
 export type commandParser = (command: string) => string[] | Promise<string[]>;
 
@@ -29,6 +29,8 @@ commandMap.set("circle", drawCircle);
 commandMap.set("draw", drawPicture);
 // 清扫
 commandMap.set("clean", clean);
+//
+commandMap.set("music", musicCommand);
 
 /**
  * 拆分命令为命令组
