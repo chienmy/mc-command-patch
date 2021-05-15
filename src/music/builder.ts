@@ -1,5 +1,5 @@
-import {Block, BlockType} from "./block";
-import {BlockArray} from "./blockArray";
+import { Block, BlockType } from "../utils";
+import { Cube } from "../utils";
 
 export class MusicBuilder {
   // 横截面设计，16音轨，4声部
@@ -76,8 +76,8 @@ export class MusicBuilder {
       "GRGRGRG",
       " G G G "]
     ];
-    const blockArray = new BlockArray(array, this.blockMap);
-    blockArray.setMask([0, -1, 0], [0, 0, 1], [1, 0, 0]);
+    const blockArray = new Cube(array, this.blockMap);
+    blockArray.setMask([0, 1, 0], [-1, 0, 0], [0, 0, 1]);
     return blockArray.toCommand(this.originalPoint);
   }
 
